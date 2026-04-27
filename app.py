@@ -1,12 +1,12 @@
 import streamlit as st
-import joblib as jb
+import joblib 
 import pandas as pd
 # Title Show on Website 
 st.title("🏠 House Price Prediction App")
 
 # Saved data load 
-model = jb.load('models/best_model.pkl')
-scaler = jb.load('models/scaler.pkl')
+model = joblib.load('models/best_model.pkl')
+scaler = joblib.load('models/scaler.pkl')
 
 # sidebar input section 
 st.sidebar.header("Enter House Details ")
